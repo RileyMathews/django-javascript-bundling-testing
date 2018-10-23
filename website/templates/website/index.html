@@ -1,4 +1,14 @@
+{% load static %}
+{% load compress %} 
+{% compress css %}
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/normalization.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/styles.css' %}">
+{% endcompress %}
 <h1>Welcome</h1>
 <div id="app">
-    
+
 </div>
+
+{% compress js %}
+<script src="{% static 'website/javascript/index.js' %}"></script>
+{% endcompress %}
